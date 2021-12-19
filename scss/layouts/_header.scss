@@ -1,0 +1,56 @@
+.siteHeader{
+  padding: 25px 0;
+  background: transparent;
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // right: 0;
+  margin-bottom: -87px;
+  &__flex{
+    display: flex;
+    align-items: center;
+    @include breakpoint(xs){
+      justify-content: space-between;
+    }
+  }
+}
+
+.logoHeader{
+  margin-right: 50px;
+  display: flex;
+}
+
+.navbar{
+  display: flex;
+  @include breakpoint(xs){
+    display: none;
+  }
+  &__item{
+    display: flex;
+    align-items: center;
+    color: #02073E;
+    font-size: 15px;
+  }
+  a{
+    transition: 0.3s;
+    &+ a{
+      margin-left: 20px;
+    }
+    svg{
+      margin-left: 5px;
+    }
+    &:hover{
+      text-decoration: none;
+      color: #00A99D;
+    }
+  } 
+  .active{
+    color: #00A99D;
+  }
+}
+
+.menuMobile{
+  @include breakpoint(sm){
+    display: none;
+  }
+}

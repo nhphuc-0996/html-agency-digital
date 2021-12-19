@@ -1,0 +1,139 @@
+// Font Colors
+
+$base-font-family:'DM sans';
+$base-font-color:#36353E;
+$base-font-weight:normal;
+$base-line-height:1.5;
+
+//Background Colors
+$white1:#ffffff;
+$white2:#fafafa;
+//...
+
+$black1:#000000;
+$black2:#262626;
+$black3:#595959;
+$black4:#373737;
+$black5:#35363f;
+$black6:#EDF1F7;
+$black7:#E4E9F2;
+//...
+
+$yellow1:#ff8917;
+$yellow2:#FFC059;;
+$yellow3:#FDB913;
+$yellow4:#fffcee;
+$yellow5:#FFC069;
+$yellow6:#FFD591;
+$yellow7:#FFF7E6;
+//...
+
+$blue1:#222B45;
+$blue2:#1890FF;
+$blue3:#096DD9;
+$blue4:#e2f4f9;
+$blue5:#0b324f;
+$blue6:#546fae;
+$blue7:#336ce0;
+$blue8:#d7effd;
+$blue9:#f1f8fc;
+$blue-ant: #40a9ff;
+//...
+
+
+$red1:#f5222d;
+$red2:#d0021b;
+$red3:#ff9aa7;
+$red4:#ffdde1;
+$red5:#dd4d30;
+$red6:#d92c26;
+$red7:#f05858;
+$red8:#FF7875;
+$red9:#FF4D4F;
+$red10:#FFCCC7                                                            ;
+//...
+
+$green1:#389E0D;
+$green2:#91BB15;
+$green3:#add075;
+$green4:#577209;
+$green5:#5a8a0d;
+$green6:#37a74b;
+$green7:#D9F7BE;
+//...
+
+$gray1:#f1f1f1;
+$gray2:#eee;
+$gray3:#999;
+$gray4:#f0f0f0;
+$gray5:#8c8c8c;
+$gray6:#dddddd;
+$gray7:#f8f8f8;
+$gray8:#d8d8d8;
+$gray9:#ededed;
+$gray10:#dbdbdb;
+//...
+
+$pink1:#fffde7;
+//...
+
+$textColor: #02073E;
+$borderColor: #E8E8E8;
+
+//Font Size
+$size6: 6px;
+$size8: 8px;
+$size10:10px;
+$size11:11px;
+$size12:12px;
+$size13:13px;
+$size14:14px;
+$size16:16px;
+$size18:18px;
+$size20:20px;
+$size22:22px;
+$size24:24px;
+$size26:26px;
+$size28:28px;
+$size30:30px;
+$size36:36px;
+$size38:38px;
+$size50:50px;
+$size100:100px;
+
+//Font weight
+$light:300;
+$regular:400;
+$medium:500;
+$semibold:600;
+$bold:700;
+$extrabold:900;
+
+//Responsive
+$screen-xs:767px;
+$screen-sm:768px;
+$screen-md:992px;
+$screen-lg:1200px;
+$screen-xl:1500px;
+
+//grid
+$screen-sm-max: ($screen-md - 1);
+$screen-md-max: ($screen-lg - 1);
+$grid-columns: 12;
+$grid-gutter-width: 30px;
+
+//box-shadow
+$shadow:0 2px 8px rgba(0, 0, 0, 0.15);
+
+$hoverColor: #FFF7E6;
+
+$borderSuccess:rgba(199, 232, 178, 0.6);
+$backgroundSuccess:rgba(82, 208, 1, 0.06);
+
+$borderFailed:#FFA39E;
+$backgroundFailed:#FFF1F0;
+
+
+
+
+

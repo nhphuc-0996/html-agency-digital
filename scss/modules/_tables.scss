@@ -1,0 +1,104 @@
+.table{
+  width: 100%;
+  max-width: 100%;
+  tr{
+    th{
+      vertical-align: middle;
+      //background-color: #fafafa;
+      text-align: left;
+      font-weight: $semibold;
+      //@include add-border(1px,$borderColor,top);
+    }
+  }
+  tr{
+    td{
+      vertical-align: middle;
+      //border: none;
+      p{
+        margin-bottom: 0;
+      }
+    }
+  }
+  th, td{
+    padding: 12px;
+    //@include add-border(1px,$borderColor,bottom);
+    //@include add-border(1px,$borderColor,right);
+    //&:first-child{
+    //  @include add-border(1px,$borderColor,left);
+    //}
+  }
+  .form_table{
+    position: relative;
+    width: 100%;
+    svg{
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+    }
+  }
+  &__header{
+    background: #f5f5f5;
+  }
+  &__cont{
+    width: 90%;
+    margin: auto;
+  }
+}
+
+.vntTable{
+  background-color: #fff;
+  &__header{
+    @include breakpoint(max-md){
+      display: none;
+    }
+    @include breakpoint(lg){
+      padding: 0 7.5px;
+      border-radius: 4px 4px 0 0;
+      display: flex;
+      background-color: #f5f5f5;
+    }
+  }
+  &__body{}
+  &__row{
+    border-bottom: 1px solid $borderColor;
+    @include breakpoint(max-md){
+      padding: 10px 0;
+    }
+    @include breakpoint(lg){
+      display: flex;
+      padding: 0 7.5px;
+    }
+  }
+  &__cell{
+    @include breakpoint(max-md){
+      display: flex;
+      justify-content: space-between;
+      padding: 5px 0;
+    }
+    @include breakpoint(lg){
+      padding: 15px 7.5px;
+      flex: 1;
+    }
+    &:last-child{
+      @include breakpoint(lg){
+        text-align: right;
+      }
+    }
+  }
+  &__titleMobile{
+    margin-bottom: 0;
+    font-weight: 600;
+    @include breakpoint(lg){
+      display: none;
+    }
+  }
+}
+
+.tableResponsive{
+  @include breakpoint(xs){
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    max-width: 100%;
+  }
+}

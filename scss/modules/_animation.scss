@@ -1,0 +1,94 @@
+@keyframes opacityShow {
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
+@keyframes tracking-in-expand {
+  0% {
+    transform: scale(.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.1);
+    text-shadow: 0 0 20px white;
+    color: transparent;
+  }
+  100% {
+    opacity: 1;
+    text-shadow: none;
+    color: #fff;
+    transform: scale(1);
+  }
+}
+
+@keyframes tracking-in-translate {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  20% {
+    transform: translateY(-.5em);
+  }
+  40% {
+    transform: translateY(0);
+  }
+  60% {
+    transform: translateY(-.25em);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes placeHolderShimmer{
+  0%{
+    background-position: -468px 0
+  }
+  100%{
+    background-position: 468px 0
+  }
+}
+
+@keyframes airplane{
+  from{
+    transform: translateY(0);
+  }
+  to{
+    transform: translateY(30px);
+  }
+}
+
+@keyframes clouds{
+  from{
+    right: 0;
+  }
+  to{
+    right: 130%;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: .2;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .2;
+  }
+}

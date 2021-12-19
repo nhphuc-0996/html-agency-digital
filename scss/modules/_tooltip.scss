@@ -1,0 +1,109 @@
+.tooltip{
+  &[data-tooltip] {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    &:before,
+    &:after{
+      visibility: hidden;
+      opacity: 0;
+      cursor: auto;
+      @include breakpoint(max-md){
+        display: none;
+      }
+    }
+    &:before{
+      position: absolute;
+      top: calc(100% + 10px);
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 7px 15px;
+      width: 200px;
+      border-radius: 2px;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      content: attr(data-tooltip);
+      text-align: center;
+      transition: all .2s;
+      z-index: 5;
+    }
+    &:after{
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      border-width: 5px;
+      border-style: solid;
+      border-color: transparent transparent rgba(0, 0, 0, 0.8);
+      content: " ";
+      transition: all .2s;
+      z-index: 5;
+    }
+    &:hover{
+      &:before,
+      &:after{
+        @include breakpoint(lg){
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+  }
+  &.tooltip_top{
+    &[data-tooltip]{
+      &:before{
+        bottom: calc(100% + 10px);
+        top: auto;
+      }
+      &:after{
+        border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+        bottom: 100%;
+        top: auto;
+      }
+    }
+  }
+}
+
+.tooltipBox{
+  position: relative;
+  &:hover{
+    @include breakpoint(lg){
+      .tooltipBox__cont{
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+  &__cont{
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 7px 15px;
+    width: 250px;
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    transition: all .2s;
+    z-index: 5;
+    opacity: 0;
+    visibility: hidden;
+    @include breakpoint(max-md){
+      display: none;
+    }
+    &:before{
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      border-width: 5px;
+      border-style: solid;
+      border-color: transparent transparent rgba(0, 0, 0, 0.8);
+      content: " ";
+      transition: all .2s;
+      z-index: 5;
+    }
+  }
+}

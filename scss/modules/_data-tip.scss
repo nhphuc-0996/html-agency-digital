@@ -1,0 +1,28 @@
+[data-tip]{
+  position: relative;
+  z-index: 5;
+  &:before{
+    content: '';
+    position: absolute;
+    left: 9px;
+    top: 100%;
+    border-top: 1px solid $red2;
+    border-left: 1px solid $red2;
+    width: 7px;
+    height: 7px;
+    transform: rotate(45deg);
+    @include add-background($red2);
+  }
+  &:after{
+    content: attr(data-tip);
+    position: absolute;
+    top: calc(100% + 3px);
+    left: 0;
+    padding: 5px 10px;
+    display: block;
+    color: #fff;
+    font-size: $size14;
+    @include add-background($red2);
+    border-radius: 3px;
+  }
+}

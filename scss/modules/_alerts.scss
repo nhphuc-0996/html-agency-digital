@@ -1,0 +1,40 @@
+.alert{
+  padding: 15px;
+  background: #FFFEFA;
+  border: 1px solid #FEF1D4;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  &.alert_success{
+    background: #F6FFED;
+    border-color: #B7EB8F;
+  }
+  &.alert_fail{
+    background: #FFF1F0;
+    border-color: #FFA39E;
+  }
+  &.alert_xs{
+    padding: 7px 15px;
+  }
+  &.alert_green{
+    border: 2px solid #91bb15;
+    background-color: #F3FFE1;
+  }
+  &__icon{
+    svg{
+      display: block;
+    }
+  }
+  &__text{
+    padding-left: 15px;
+    flex: 1;
+    color:rgba(250, 140, 22, 1);
+    p{
+      margin-bottom: 0;
+      &.p1{
+        font-size: 16px;
+      }
+    }
+  }
+}

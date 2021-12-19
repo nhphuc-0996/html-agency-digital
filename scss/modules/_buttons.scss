@@ -1,0 +1,280 @@
+a.btn{
+  &:hover{
+    text-decoration: none;
+  }
+}
+.btn{
+  line-height: 1.5;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  white-space: nowrap;
+  text-align: center;
+  background-image: none;
+  border: 1px solid transparent;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.015);
+  cursor: pointer;
+  transition: all .2s;
+  user-select: none;
+  touch-action: manipulation;
+  min-height: 50px;
+  padding: 0 15px;
+  border-radius: 4px;
+  svg{
+    margin-right: 5px;
+  }
+  &:hover{
+    opacity: .9;
+  }
+}
+.btn_orange{
+  color: #fff;
+  background-color: $yellow2;
+  border-color: $yellow2;
+}
+.btn_orange:focus, .btn_orange:hover {
+  color: #fff;
+  background: $yellow2;
+  border-color: $yellow2;
+}
+.btn_orange[disabled], .btn_orange[disabled]:active, .btn_orange[disabled]:focus, .btn_orange[disabled]:hover {
+  color: rgba(0,0,0,.25);
+  background: #f5f5f5;
+  border-color: #d9d9d9;
+  text-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.btn_blue{
+  color: #fff;
+  background-color: $blue1;
+  border-color: $blue1;
+}
+.btn_green{
+  color: #fff;
+  background-color: $green1;
+  border-color: $green1;
+}
+.btn_outline_orange{
+  color: $yellow2;
+  background-color: #fff;
+  border-color: $yellow2;
+  &:focus, &:hover{
+    color: #fff;
+    background: #FFC059;
+  }
+}
+.btn_outlineRed{
+  color: #FF4D4F;
+  background-color: #fff;
+  border-color: #FF4D4F;
+}
+.btn_outlineBlue{
+  color: $blue1;
+  background-color: #fff;
+  border-color: $blue1;
+}
+.btn_light{
+  @include add-background(#f2f2f2);
+}
+.btn_white{
+  background-color: #fff;
+  color: $black3;
+  border-color: #d9d9d9;
+}
+.btn_black{
+  background-color: rgba(46, 58, 89, .7);
+  color: #fff;
+}
+.btn_outline{
+  color: #878787;
+  background-color: #fff;
+  border-color: $borderColor;
+  &:hover{
+    color: $yellow2;
+    background-color: #fff;
+    border-color: $yellow2;
+  }
+}
+.btn_xs{
+  min-height: 24px;
+  font-size: 12px;
+}
+.btn_sm{
+  min-height: 32px;
+  font-size: 12px;
+}
+.btn_lg{
+  min-height: 48px;
+  font-size: 16px;
+}
+.btn_disabled{
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.5;
+}
+.btn_loading{
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.5;
+  .fa-spinner{
+    animation:spin 1.5s linear infinite;
+    @keyframes spin {
+      from{transform: rotate(0deg);}
+      to{transform: rotate(360deg);}
+    }
+  }
+}
+.btnInline{
+  .btn{
+    + .btn{
+      margin-left: 8px;
+    }
+  }
+}
+.btnSvg{
+  svg{
+    display: block;
+  }
+}
+.btnAdd{
+  color: $yellow2;
+  font-weight: $semibold;
+  span,svg{
+    vertical-align: middle;
+  }
+  svg{
+    margin-left: 5px;
+  }
+  &:hover{
+    span{
+      text-decoration: underline;
+    }
+  }
+}
+.btnAdd_mobile{
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  @include breakpoint(sm){
+    display: none;
+  }
+}
+.btnEdit{
+  .edit_desk{
+    @include breakpoint(xs){
+      display: none;
+    }
+  }
+  .edit_mobile{
+    svg{
+      width: 15px;
+      height: 15px;
+    }
+    @include breakpoint(sm){
+      display: none;
+    }
+  }
+}
+.btnSwitch{
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 32px;
+    height: 16px;
+    margin-bottom: 0;
+    margin-right: 6px;
+    vertical-align: middle;
+    input{
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      transition: .3s;
+      border-radius: 34px;
+      &:before{
+        position: absolute;
+        content: "";
+        height: 12px;
+        width: 12px;
+        left: 2px;
+        bottom: 2px;
+        background-color: white;
+        transition: .3s;
+        border-radius: 50%;
+      }
+    }
+    input:checked + .slider {
+      background-color: #2196F3;
+    }
+    input:checked + .slider:before {
+      transform: translateX(16px);
+    }
+  }
+  span{
+    vertical-align: middle;
+    display: inline-block;
+  }
+
+}
+.btnLink{
+  color: $blue1;
+  font-weight: 600;
+  &:hover{
+    span{
+      text-decoration: underline;
+    }
+  }
+  > svg{
+    margin-right: 5px;
+  }
+  span,svg{
+    vertical-align: middle;
+  }
+}
+.btnRemove{
+  display: inline-flex;
+  align-items: center;
+  svg{
+    margin-right: 5px;
+  }
+  &:hover{
+    span{
+      text-decoration: underline;
+    }
+  }
+}
+.btnRight{
+  margin-top: 16px;
+  display: flex;
+  justify-content: flex-end;
+  //@include breakpoint(sm){
+  //  text-align: right;
+  //}
+  a:hover{
+    text-decoration: none;
+  }
+  .btn_orange{
+    width: 100px;
+    @include breakpoint(sm){
+      width: 160px;
+    }
+  }
+}
+.btn_outline_blue{
+  border-color: #1890FF!important;
+  color: #1890FF!important;
+  background: #fff!important;
+}

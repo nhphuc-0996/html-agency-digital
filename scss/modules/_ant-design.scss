@@ -1,0 +1,259 @@
+// ant-table
+.ant-table {
+  color: #262626;
+}
+
+.ant-table-small > .ant-table-content > .ant-table-header > table > .ant-table-thead > tr > th, .ant-table-small > .ant-table-content > .ant-table-body > table > .ant-table-thead > tr > th, .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-header > table > .ant-table-thead > tr > th, .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-thead > tr > th, .ant-table-small > .ant-table-content > .ant-table-fixed-left > .ant-table-header > table > .ant-table-thead > tr > th, .ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-header > table > .ant-table-thead > tr > th, .ant-table-small > .ant-table-content > .ant-table-fixed-left > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th, .ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th, .ant-table-small > .ant-table-content > .ant-table-header > table > .ant-table-tbody > tr > td, .ant-table-small > .ant-table-content > .ant-table-body > table > .ant-table-tbody > tr > td, .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-header > table > .ant-table-tbody > tr > td, .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-tbody > tr > td, .ant-table-small > .ant-table-content > .ant-table-fixed-left > .ant-table-header > table > .ant-table-tbody > tr > td, .ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-header > table > .ant-table-tbody > tr > td, .ant-table-small > .ant-table-content > .ant-table-fixed-left > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-tbody > tr > td, .ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-tbody > tr > td {
+  padding: 10px 12px;
+}
+
+.ant-table-small > .ant-table-content > .ant-table-body {
+  margin: 0;
+}
+
+.ant-table-small > .ant-table-content > .ant-table-header > table > .ant-table-thead > tr > th, .ant-table-small > .ant-table-content > .ant-table-body > table > .ant-table-thead > tr > th, .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-header > table > .ant-table-thead > tr > th, .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-thead > tr > th, .ant-table-small > .ant-table-content > .ant-table-fixed-left > .ant-table-header > table > .ant-table-thead > tr > th, .ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-header > table > .ant-table-thead > tr > th, .ant-table-small > .ant-table-content > .ant-table-fixed-left > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th, .ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th {
+  background-color: #fafafa;
+}
+
+.ant-table-thead > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td, .ant-table-tbody > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td, .ant-table-thead > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td, .ant-table-tbody > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td {
+  background: transparent;
+}
+
+// end ant-table
+
+.ant-form-item {
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.ant-form-item-label > label {
+  color: #000;
+}
+
+.ant-form-large .ant-form-item-label > label {
+  height: auto;
+}
+
+#treeBranchContainer {
+  padding: 0 !important;
+}
+
+.ant-select {
+  margin-bottom: 0 !important;
+}
+
+.ant-layout {
+  background: transparent;
+}
+
+.ant-form-item-explain, .ant-form-item-extra {
+  min-height: auto;
+}
+
+// ant-modal
+.ant-modal {
+  top: 50px;
+  color: #000;
+}
+
+.ant-modal-close {
+  color: #000;
+}
+
+.ant-modal-header {
+  color: #000;
+}
+
+.ant-modal-title {
+  font-weight: 600;
+}
+
+.ant-modal-footer {
+  padding: 12px 24px;
+
+  .ant-btn {
+    min-width: 100px;
+  }
+}
+
+.ant-table-filter-dropdown {
+  padding: 15px;
+
+  .ant-input {
+    margin-bottom: 15px;
+  }
+
+  .ant-btn {
+    min-width: 100px;
+
+    + .ant-btn {
+      margin-left: 8px;
+    }
+  }
+}
+
+// ant-datepicker
+.vntDatepicker {
+  @include breakpoint(xs) {
+    .ant-picker-active-bar{
+      display: none;
+    }
+    .ant-picker-dropdown {
+      position: fixed !important;
+      top: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      bottom: 0 !important;
+      padding: 0;
+    }
+    .ant-picker-range-wrapper {
+      min-width: initial !important;
+      width: 100%;
+      height: 100%;
+    }
+    .ant-picker-range-arrow {
+      display: none !important;
+    }
+    .ant-picker-panel-container {
+      box-shadow: none;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+
+      > .ant-picker-panel {
+        flex-wrap: wrap;
+
+        > .ant-picker-date-panel {
+          order: 2;
+          height: calc(100% - 50px);
+          overflow-y: auto;
+          -webkit-overflow-scrolling: touch;
+        }
+      }
+
+      .ant-picker-panels {
+        flex-wrap: wrap;
+        height: calc(100% - 50px);
+        order: 2;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .ant-picker-footer {
+        order: 1;
+        height: 50px;
+
+        .ant-picker-footer-extra {
+          padding: 0;
+        }
+      }
+    }
+    .ant-picker-panel {
+      width: 100%;
+    }
+    .ant-picker-decade-panel, .ant-picker-year-panel, .ant-picker-quarter-panel, .ant-picker-month-panel, .ant-picker-week-panel, .ant-picker-date-panel, .ant-picker-time-panel {
+      width: 100%;
+    }
+    .ant-picker-date-panel .ant-picker-content {
+      width: 100%;
+    }
+    .ant-picker-cell .ant-picker-cell-inner {
+      min-width: 36px;
+      height: 36px;
+      line-height: 36px;
+    }
+    .ant-picker-cell::before {
+      height: 36px;
+    }
+    .ant-picker-cell {
+      padding: 5px 0;
+    }
+  }
+
+  .ant-picker-large .ant-picker-input > input {
+    color: #000;
+    @include breakpoint(xs) {
+      font-size: 15px;
+    }
+    @include breakpoint(sm) {
+      font-size: 14px;
+    }
+  }
+  .ant-picker{
+    border-radius: 4px;
+    color: #000;
+    width: 100%;
+  }
+  .ant-picker-large {
+    height: 40px;
+    padding: 0 15px;
+  }
+}
+
+.ant-input-affix-wrapper {
+  color: #000;
+  border-radius: 4px;
+}
+
+.ant-input-lg {
+  height: 40px;
+  padding: 0 15px;
+  @include breakpoint(xs) {
+    font-size: 15px;
+  }
+  @include breakpoint(sm) {
+    font-size: 14px;
+  }
+}
+.ant-input-affix-wrapper-lg{
+  height: 40px;
+  padding: 0 15px;
+  @include breakpoint(sm){
+    font-size: 14px;
+  }
+  .ant-input-lg{
+    height: auto;
+  }
+}
+.ant-dropdown {
+  color: #000;
+}
+
+.ant-dropdown-menu {
+  width: 300px;
+  border-radius: 4px;
+  padding: 0;
+  box-shadow: $shadow;
+  overflow: hidden;
+}
+
+.ant-radio-wrapper,
+.ant-checkbox-wrapper {
+  color: #000;
+}
+
+.ant-input {
+  color: #000;
+  border-radius: 4px;
+}
+.ant-modal-body{
+  padding: 15px;
+}
+.ant-modal-header{
+  padding: 15px;
+}
+.ant-modal-footer{
+  padding: 15px;
+}
+.ant-select{
+  color: #000;
+}
+.ant-select-lg{
+  @include breakpoint(sm){
+    font-size: 14px;
+  }
+}
+.ant-select-single:not(.ant-select-customize-input) .ant-select-selector{
+  border-radius: 4px;
+}

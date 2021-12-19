@@ -1,0 +1,54 @@
+.breadcrumb{
+  margin: 16px 0;
+  display: flex;
+  @include breakpoint(xs){
+    overflow-x: auto;
+  }
+  //flex-wrap: wrap;
+  >li{
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    //+li{
+    //  &:before{
+    //    content:'\003e';
+    //    padding: 0 10px;
+    //    color:#878787;
+    //  }
+    //}
+    >a{
+      font-size: $size14;
+      line-height: 19px;
+      display: block;
+      @include breakpoint(xs){
+        span{
+          //text-overflow: ellipsis;
+          //width: 25px;
+          //overflow: hidden;
+        }
+      }
+      &:hover{
+        @include breakpoint(md){color: $yellow1;}
+        >svg path{
+          @include breakpoint(md){fill: $yellow1;}
+        }
+        >span{
+          @include breakpoint(md){color: $yellow1;}
+        }
+      }
+    }
+    span{
+      margin: 0 10px;
+      color: #595959;
+      display: block;
+    }
+  }
+  >.active{
+    font-size: $size14;
+    line-height: 19px;
+    //color:$textColor;
+    font-weight: $semibold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

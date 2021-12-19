@@ -1,0 +1,15 @@
+#root,
+.pageBody{
+  width: 100%;
+  height: 100%;
+}
+.wrapper{
+  padding-bottom: 60px;
+}
+body{
+  &.noScroll{
+    @include breakpoint(xs){
+      overflow: hidden;
+    }
+  }
+}

@@ -1,0 +1,156 @@
+.formGroup{
+  margin-bottom: 12px;
+  > label{
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+  }
+}
+.formControl{
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  font-size: $size14;
+  color: $textColor;
+  @include add-border(1px,$borderColor,all);
+  background: #fff;
+  @include border-radius(4px);
+  width: 100%;
+  height: 40px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-align: left;
+  transition: all .3s;
+  &:hover{
+    border-color: $blue-ant;
+  }
+  &:focus{
+    outline: none;
+    // box-shadow: $shadow-ant;
+    border-color: $blue-ant;
+  }
+  &_round{
+    border-radius: 30px;
+  }
+  &_xs{
+    height: 24px;
+    font-size: 12px;
+  }
+  &_sm{
+    height: 32px;
+  }
+  &_lg{
+    height: 48px;
+  }
+}
+.formControl[disabled]{
+  background-color:$gray1!important;
+  cursor: not-allowed;
+}
+select.formControl{
+  -webkit-appearance: none;
+  background-image: url("https://statics.vntrip.vn/images/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+.inputInline{
+  position: relative;
+  .formControl{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    padding-right: 35px;
+  }
+  > svg{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+}
+.inputGroup{
+  display: flex;
+  align-items: center;
+}
+.formInline{
+  display: flex;
+  .ant-input,
+  .formControl{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: none;
+    width: auto;
+    flex: 1;
+  }
+  .ant-btn,
+  .btn{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+.inputPhone{
+  display: flex;
+  border: 1px solid $borderColor;
+  border-radius: 4px;
+  height: 40px;
+  .formControl{
+    border: none;
+    background: transparent;
+    flex: 1;
+    height: 100%;
+  }
+  span{
+    border-right: 1px solid $borderColor;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+}
+
+.upload{
+  margin-bottom: 0;
+  cursor: pointer;
+  width: 93px;
+  height: 32px;
+  padding: 5px 15px;
+  border: 1px solid $borderColor;
+  background: #fff;
+  border-radius: 4px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  span{
+    padding-left: 5px;
+  }
+  input[type='file']{display: none;}
+}
+textarea.formControl{
+  height: 80px;
+  padding: 5px 15px;
+}
+
+.headerPopup{
+  background-color: $yellow2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  height: 50px;
+  @include breakpoint(sm){
+    display: none;
+  }
+  > p{
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 0;
+  }
+  &__close{
+    padding: 10px 0 10px 15px;
+    svg{
+      display: block;
+    }
+  }
+}

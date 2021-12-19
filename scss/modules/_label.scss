@@ -1,0 +1,6 @@
+.label-star{
+  &:after{
+    content: '*';
+    color: $red1;
+  }
+}
